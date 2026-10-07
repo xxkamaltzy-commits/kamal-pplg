@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portofolio Muhammad Kamaludin - Web Developer">
+<title>Muhammad Kamaludin | Portofolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="progress" id="progress"></div>
+
+<header>
+  <nav class="nav">
+    <a href="#beranda" class="logo">MK<span>.</span></a>
+    <ul class="menu" id="menu">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Ganti tema">🌙</button>
+      <button class="icon-btn burger" id="burger" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="beranda">
+    <p class="eyebrow">👋 Selamat datang di portofolio saya</p>
+    <h1>Muhammad <span class="grad">Kamaludin</span></h1>
+    <p class="role">Saya seorang <span id="typing"></span><span class="cursor">|</span></p>
+    <div class="cta">
+      <a href="#proyek" class="btn">Lihat Proyek</a>
+      <a href="#kontak" class="btn ghost">Hubungi Saya</a>
+    </div>
+    <a href="#tentang" class="scroll-hint" aria-label="Scroll ke bawah">↓</a>
+  </section>
+
+  <section id="tentang" class="reveal">
+    <h2>Tentang Saya</h2>
+    <div class="about">
+      <div class="photos">
+        <figure class="photo p1">
+          <img src="https://cdn.phototourl.com/member/2026-10-07-67b83626-b3ca-4c55-8890-76ef1ff5c124.jpg" alt="Muhammad Kamaludin - photo 1" data-fallback="1">
+        </figure>
+        <figure class="photo p2">
+          <img src="https://cdn.phototourl.com/member/2026-10-07-bf5ee87f-0610-4e55-9135-04fc769e3477.jpg" alt="Muhammad Kamaludin - photo 2" data-fallback="2">
+        </figure>
+      </div>
+      <div class="glass about-text">
+        <h3>Hi, I'm Muhammad Kamaludin 👋</h3>
+        <p>I'm a passionate web developer who loves turning ideas into clean, fast, and user-friendly websites. I enjoy working with HTML, CSS, and JavaScript, and I'm always learning new tools to improve my craft.</p>
+        <p>I care about details: responsive layouts, accessible design, and smooth interactions. When I'm not coding, you'll find me reading, exploring new technology, or working on side projects.</p>
+        <div class="stats">
+          <div><b data-count="15">0</b><span>Projects</span></div>
+          <div><b data-count="3">0</b><span>Years learning</span></div>
+          <div><b data-count="10">0</b><span>Happy clients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="keahlian" class="reveal">
+    <h2>Keahlian</h2>
+    <div class="glass skills">
+      <div class="skill"><div class="top"><span>HTML & CSS</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+      <div class="skill"><div class="top"><span>JavaScript</span><span>80%</span></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill"><div class="top"><span>UI / UX Design</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+      <div class="skill"><div class="top"><span>React</span><span>65%</span></div><div class="bar"><i data-w="65"></i></div></div>
+      <div class="skill"><div class="top"><span>Git & GitHub</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+    </div>
+  </section>
+
+  <section id="proyek" class="reveal">
+    <h2>Proyek</h2>
+    <div class="filters" id="filters">
+      <button class="chip active" data-f="all">Semua</button>
+      <button class="chip" data-f="web">Web</button>
+      <button class="chip" data-f="app">Aplikasi</button>
+      <button class="chip" data-f="ui">UI Design</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card" data-c="web"><div class="ico">🛒</div><h3>Toko Online UMKM</h3><p>Katalog produk dengan keranjang belanja sederhana untuk usaha kecil.</p><div class="tags"><em>HTML</em><em>CSS</em><em>JS</em></div></article>
+      <article class="card" data-c="app"><div class="ico">✅</div><h3>Aplikasi To-Do List</h3><p>Pencatat tugas harian dengan fitur tambah, selesai, dan hapus.</p><div class="tags"><em>JS</em><em>LocalStorage</em></div></article>
+      <article class="card" data-c="app"><div class="ico">🌤️</div><h3>Dashboard Cuaca</h3><p>Prakiraan cuaca kota secara visual dan mudah dibaca.</p><div class="tags"><em>API</em><em>JS</em></div></article>
+      <article class="card" data-c="web"><div class="ico">📰</div><h3>Blog Pribadi</h3><p>Situs blog responsif dengan tampilan bersih dan mode gelap.</p><div class="tags"><em>HTML</em><em>CSS</em></div></article>
+      <article class="card" data-c="ui"><div class="ico">🎨</div><h3>Desain Aplikasi Mobile</h3><p>Rancangan antarmuka aplikasi mobile lengkap dengan alur pengguna.</p><div class="tags"><em>Figma</em><em>UX</em></div></article>
+      <article class="card" data-c="ui"><div class="ico">🚀</div><h3>Landing Page Startup</h3><p>Halaman pendaratan modern dengan animasi halus dan CTA jelas.</p><div class="tags"><em>UI</em><em>CSS</em></div></article>
+    </div>
+  </section>
+</main>
+
+<footer id="kontak">
+  <div class="footer-inner">
+    <h2>Kontak</h2>
+    <p class="muted">Punya proyek atau ingin berkolaborasi? Kirim pesan!</p>
+    <form class="glass form" id="form">
+      <input type="text" id="name" placeholder="Nama Anda" required>
+      <input type="email" id="email" placeholder="Email Anda" required>
+      <textarea id="msg" rows="4" placeholder="Pesan Anda" required></textarea>
+      <button class="btn" type="submit">Kirim Pesan</button>
+    </form>
+    <div class="contact">
+      <a href="mailto:muhammad.kamaludin@example.com">✉️ muhammad.kamaludin@example.com</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <small class="muted">© <span id="year"></span> Muhammad Kamaludin. Semua hak dilindungi.</small>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
